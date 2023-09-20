@@ -23,9 +23,4 @@ $("#to").on("change",function(){
      $("#from").slideDown(300);
      $("#to").slideUp(200);
      $(".menu-logo").css({opacity:1})
-     
-     
-     
-     
-     
 })
