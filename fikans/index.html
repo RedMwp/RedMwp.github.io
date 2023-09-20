@@ -16,41 +16,68 @@
 
 <body>
   <header>
-      <nav class="main-nav">
-              <div class="menu">
-                  <img src="menu.png" id="menu">
-                  <a href="#" class="brand">Fika<span class="dot">.</span></a>
-              </div>
-                  <form>
-                  <label for="from">from</label>
-                  <input type="text" id="from" placeholder="from where">
-                  </form>
-                  <div class="avatar">
-                      <img src="avatar-icon.png">
-                  </div>
-      </nav>
-      <nav class="secondary-nav">
-          <form class="sec-form">
-              <label for="to">to</label>
-          <input type="text" name="" id="to">
-          </form>
-      </nav>
-      <!-----main menu--->
-      <div class="main-menu">
-          <div class="menu-head">
-              <a href="#" class="brand">Fika<span class="dot">.</span></a>
-              <button class="exit-menu">X</button>
-          </div>
-          <ul class="menu-list-items">
-              <li>item1</li>
-              <li>item2</li>
-              <li>item1</li>
-              <li>item2</li>
-              <li>item1</li>
-              <li>item2</li>
-          </ul>
+    <nav>
+      <div class="menu-logo">
+        <ul id="menu-btn">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <a href="" class="brand">Fika<span class="dot">.</span></a>
       </div>
+      <form>
+        <div class="input">
+          <input type="text" id="from" placeholder="from">
+        </div>
+        <div class="input">
+          <input type="text" id="to" placeholder="where to">
+        </div>
+      </form>
+      <a href="" class="avatar">a</a>
+    </nav>
+    <div class="main-menu">
+      <div class="menu-head">
+        <a href="" class="brand">fika</a> <i id="exit-menu">icon</i>
+      </div>
+      <ul>
+        <li><div class="avatar-menu"></div><div><h3>alfred</h3><i class="small">lusaka,zambia</i></div></li>
+        <li>Home</li>
+        <li>Places</li>
+        <li>My Bookings</li>
+        <li>Drop points</li>
+        <li>settings</li>
+        <li>Help</li>
+        <li>SOS</li>
+        <li>settings</li>
+        
+      </ul>
+      <i class="log-out">icon</i>
+    </div>
   </header>
+  <section class="mapouter">
+ <div class="gmap_canvas" id="map"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1632&amp;height=400&amp;hl=en&amp;q=Lusaka&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+  </section>
+  <footer>
+    <div class="info-card">
+      <div class="bus">
+        <h2> your journey</h2>
+        <ul>
+          <li><i>from: </i><i id="at"></i></li>
+          <li><i>to: </i> <i id="dest"></i></li>
+          <li >price: <i id="price"></i></li>
+          <li >drivers name</li>
+        </ul>
+      </div>
+      <div class="car-destination-info">
+        <ul>
+          <li>name</li>
+          <li>time</li>
+          <li>arrival</li>
+          <li>price</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <!-- Project -->
   <script src="jquery-3.7.0.js"></script>
   <script src="gsap.min 1.js"></script>
