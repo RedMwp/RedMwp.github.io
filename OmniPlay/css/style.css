@@ -1,0 +1,37 @@
+.head-carosel-item{
+  background:rgba(0,0,0,0.5) url("/images/pompi.png");
+  background-size: cover;
+  background-origin: center;
+  position: relative;
+}
+.head-carosel-item::before{
+  content: "";
+  top:0;
+  bottom:0;
+  left:0;
+  right: 0;
+  background: #101010;
+  position: absolute;
+  opacity: 0.6;
+}
+.absolute{
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+}
+.relative{
+  position: relative;
+}
+.wraper{
+  margin: 0 auto;
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
