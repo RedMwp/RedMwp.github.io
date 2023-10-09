@@ -24,6 +24,12 @@ body{
 @transit: all .4s ease-in-out;
 @white:#fff;
 @shadow:1px 1px 10px rgba(0,0,0,0.4);
+//hover states
+.btn-cta(@color:@white,@background:none){
+  background: none;
+  border:1px solid @white;
+  color:@color;
+}
 //header
 main{
   
@@ -82,7 +88,7 @@ header{
     width: 70%;
     background: black;
     color:@white;
-    position: absolute;
+   position: absolute;
     right: -40%;
     top: 0;
     display: none;
@@ -130,6 +136,10 @@ header{
         font-weight: 700;
         margin: 20px 25px;
         box-shadow: @shadow;
+        transition: @transit;
+      }
+      button:hover{
+        .btn-cta(@background: @white,@color:@dark)
       }
       }
     }
@@ -150,12 +160,13 @@ section{
   //z-index: -1;
   .head-carosel{
     height:400px;
+    
     //background: pink;
     
     .head-carosel-items{
       width: 100%;
       height: 100%;
-     // background: pink;
+     //background: pink;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -169,6 +180,7 @@ section{
         justify-content: center;
         align-items: center;
         flex-shrink: 0;
+        overflow: hidden;
         .head-carosel-item-image{
           height: 200px;
           width: 200px;
@@ -176,13 +188,13 @@ section{
           background: @semi-trans;
           box-shadow:@shadow;
           aspect-ratio:1;
-         z-index: 200;
+         z-index: 1;
         }
         .head-carosel-item-text{
           width: 100%;
           max-width: 300px;
           margin: 0px 10px;
-          z-index:200;
+          z-index:1;
           justify-self:flex-end;
           h1{
             font-size: 2rem;
@@ -200,6 +212,10 @@ section{
             border:none;
             font-weight: 600;
             letter-spacing: .5px;
+            transition: @transit;
+          }
+          button:hover{
+            .btn-cta()
           }
         }
       }
@@ -228,10 +244,20 @@ section{
     margin:10px 0px;
     font-weight: 600;
     letter-spacing: .05rem;
-    
+    transition: @transit;
+  }
+  button:hover{
+    background: @white;
+    color:@dark
   }
 }
 section{
+  a{
+    transition: @transit;
+  }
+  a:hover{
+    opacity: .6;
+  }
   margin-bottom: 3%;
 }
 .text{
@@ -404,15 +430,15 @@ img{
   }
 }
 .artists-container{
-  /*display: grid;
+  display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap:1em;
-  align-items: center;*/
-  display: flex;
+  align-items: center;
+  /*display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   border-bottom: 1px solid gray;
-  padding-bottom: 2em;
+  padding-bottom: 2em;*/
   
   
 }
