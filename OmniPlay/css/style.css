@@ -2,7 +2,7 @@ body{
     margin: 0 auto;
 }
 .head-carosel-item{
-  background:rgba(0,0,0,0.5) url("images/pompi.png");
+  background:rgba(0,0,0,0.5) url("pompi.png");
   background-size: cover;
   background-origin: center;
   position: relative;
