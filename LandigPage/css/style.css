@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  font-family: 'Poppins', Sans-Serif;
+  list-style:none;
+  text-decoration:none;
+}
+:root{
+  --blue:#003FC6;
+  --accent:#F6D41E;
+  --light-blue:#CEDDF0;
+}
+body{
+  margin: 0 auto;
+  font-size: 18px;
+}
+.btn-cta{
+  background:#F6D41E;
+  border:none;
+  border-radius:.3rem;
+  font-weight:600;
+  letter-spacing:.5px;
+  height:40px;
+  width:220px;
+  transition: all .5s ease-in-out;
+  
+}
+.btn-cta:hover{
+  width:250px;
+}
+.hero-section{
+  background:#0943B2;
+  color:#fff;
+}
+.hero-section p{
+  font-size:1rem;
+  margin: 5% 0px;
+}
+
+.hero-section ul li .i{
+  width:60px;
+  height:60px;
+  object-fit:contain;
+}
+.hero-section ul{
+  
+}
+.hero-section li p{
+  font-size:.66rem;
+}
+.hero-section h1{
+  font-size:2rem;
+  line-height: 1.1;
+  
+}
+.brek{
+  margin: 0;
+  padding: 0;
+  border:none;
+  object-fit: cover;
+  
+}
+.break{
+  background: url("/assets/section-break--active.svg") no-repeat;
+  background-size:container;
+  margin: 0;
+  border: none;
+  transform: translateY(-1px);
+  height: 150px;
+}
+
+/*====tabs---*/
+.tab{
+  height: 140px;
+  margin: 0px 2%;
+  text-align: center;
+}
+.tab button{
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background: #F6D41E;
+  border:none;
+  margin:30px 0px;
+  transition: all .4s ease-in-out;
+}
+.tab button:hover{
+  transform: translateX(5px);
+}
+.text{
+  text-align: center;
+}
+.p{
+  font-size: 1rem;
+  opacity: .8;
+  line-height:1.4;
+  margin:30px 0px;
+}
+
+.more-info .container{
+  margin: 5% auto;
+  }
+ 
+
+
+
+
+
+
