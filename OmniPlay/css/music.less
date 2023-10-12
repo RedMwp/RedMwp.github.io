@@ -13,6 +13,7 @@
 .music-carosel{
   width: 100%;
   height: 370px;
+  border:2px solid @white;
 }
 .item{
   width: 100%;
@@ -62,7 +63,114 @@
   margin-top:4%;
 }
 
+.option{
+  margin-top: 30px;
+  input{
+    height: 33px;
+    width: 100px;
+    background: none;
+    border: 1px solid;
+    color: @white;
+    padding: .2em 1em;
+    transition: @transit;
+    margin: 0px 20px;
+  }
+  input:focus{
+    width: 150px;
+  }
+  button{
+    height: 33px;
+    background: none;
+    width: 100px;
+    border:1px solid;
+    color: @white;
+    transition: @transit;
+  }
+  button:hover{
+    background: @white;
+    color: @dark;
+  }
+  
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 250px;
+  position: relative;
+  ul{
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    height:0px;
+    border: 1px solid;
+    top:34px;
+    width: 100px;
+    opacity: 0;
+    transition: @transit;
+    button{
+      background: royalblue;
+      transition: @transit;
+    }
+    button:hover{
+      .btn-cta();
+    }
+    li{
+      text-align: center;
+      height: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.text{
+  padding: 2em 0px;
+  h1{
+    font-size: 2rem;
+  }
+}
 
+.main-music-container{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-gap:2rem;
+  justify-items:center;
+  
+  
+  .music{
+    p{
+      opacity: .8;
+    }
+    width: 150px;
+    .music-thumb{
+      height: 150px;
+      width: 100%;
+      background: red;
+    }
+  }
+}
 
-
-
+@media (max-width: 900px){
+  
+  
+  .main-music-container{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap:2rem;
+  
+  
+  .music{
+    p{
+      opacity: .8;
+    }
+    
+    width: 100%;
+    max-width: 150px;
+    .music-thumb{
+      height: 150px;
+      width: 100%;
+      background: red;
+    }
+  }
+  
+  }
+}
