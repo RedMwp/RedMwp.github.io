@@ -68,11 +68,6 @@ body{
 {
     width: 100%;
 }
-@media (max-width:900){
-  .wid-50{
-    width: 100%;
-  }
-}
 /*===flex===*/
 .flexible
 {
@@ -178,5 +173,16 @@ body{
    object-fit: contain;
  }
  
- 
+@media (max-width:900px){
+  .wid-50{
+    width: 100%;
+  }
+  .wid-40{
+    width: 80%;
+  }
+  .container{
+    flex-direction: column;
+  }
+}
+
  
